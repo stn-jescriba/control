@@ -1,0 +1,13 @@
+/* main.css */
+@import url('styles.css');
+
+.container {
+    background-color: #f9f9f9; /* Color de fondo específico para main */
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    /* Los elementos dentro del formulario estarán en columna */
+    gap: 15px;                 /* Espacio entre los elementos */
+}

@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Asegura que el contenedor ocupe el 100% de la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;         /* Ancho limitado para mejor apariencia */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para el contenedor */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Estilo para los inputs comunes */
+input[type="text"], 
+input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para inputs enfocados */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00b4d8; /* Azul claro */
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.5); /* Sombra azul al enfocarse */
+    background-color: #ffffff;
+}

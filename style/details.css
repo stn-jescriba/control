@@ -1,0 +1,38 @@
+/* detail.css */
+@import url('styles.css');
+
+.container.details {
+    min-height: 100vh;
+    background-color: white; /* Color de fondo específico para detalles */
+    padding: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container.details:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra ligeramente más intensa */
+}
+
+/* Estilo para cada fila de datos */
+.show-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+/* Estilo específico para etiquetas */
+.show-data label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Estilo para inputs en detalles */
+.show-data input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: all 0.3s ease; /* Agregamos animación suave para el hover y el focus */
+}
